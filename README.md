@@ -1,26 +1,56 @@
-# DribbbleDashboard
+# Angular Custom Grid & Chart Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.17.
+This project demonstrates a responsive Angular application with a **custom-built grid** and **charts**, incorporating best practices for scalable enterprise development — without relying on third-party UI libraries like Bootstrap, Material, or Tailwind.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+### ✅ Grid Functionality
+- Fully custom-built HTML/CSS/SCSS Grid (no external libraries)
+- Dynamic grid column rendering based on API structure
+- Local-only `Add`, `Update`, and `Delete` operations
+- Confirmation popups for delete actions
+- Responsive layout using **SCSS + Flexbox**
+- No data persistence (data resets on refresh)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### ✅ API Integration
+- API: `https://01.fy25ey01.64mb.io/`
+- API fetches grid metadata (column headers, properties like alignment and colors)
+- Open endpoint, but integration is structured as if for production
+- Built using Angular's **HttpClient** with:
+  - Centralized API service
+  - Error handling and loading state management
+  - Reusable data interfaces
 
-## Build
+### ✅ UI/UX
+- Custom styling using **pure SCSS** (no inline styles, no design frameworks)
+- SCSS inheritance and reusable mixins
+- Mobile-friendly layout using Flexbox
+- Chart support using `Highcharts`
+- Detailed attention to:
+  - Font sizing and spacing
+  - Border-radius, hover effects
+  - Color palette and gradient application
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ✅ Navigation
+- Vertical sidebar with icons only (non-functional)
+- Separate bottom section for profile/settings icons
 
-## Running unit tests
+### ✅ Loading State
+- Custom loading spinner shown while data is being fetched
+- Simulated API delay (2 seconds)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🧱 Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Angular** (v14+)
+- **SCSS** (no Tailwind, Bootstrap, Material)
+- **Highcharts** for charts
+- **RxJS** for reactive data handling
+- **Angular HttpClient** for API calls
+- No external grid libraries (e.g., no Syncfusion, FlexGrid, etc.)
 
 ## Further help
 
